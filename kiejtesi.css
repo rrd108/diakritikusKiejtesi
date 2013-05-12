@@ -1,0 +1,10 @@
+.kiejtes{
+	/*border-top-style: ridge;
+	border-bottom-style: groove;*/
+	font-style: italic;
+}
+
+.kiejtes:hover{
+	cursor: pointer;
+	background-color: pink;
+}

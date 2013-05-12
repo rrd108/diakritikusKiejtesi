@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 			var kiejtett = value.replace(diakritikus, function(c){
 					return kiejtesi.kiejtes[kiejtesi.diakritikus.indexOf(c)];
 				});
-			kiejtett = kiejtett.replace(/[,\(\) \r\n\t\?\!]/g, '');
+			kiejtett = kiejtett.replace(/[,\(\) \r\n\t\?\!]/g, '');	//írásjelek, soremelések eltávolítása
 			modHtml = modHtml.replace(szo, '<span class="kiejtes" title="' + kiejtett + '">' + value + '</span>');
 		}
 	});
